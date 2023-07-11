@@ -1,0 +1,26 @@
+O Add isPublished functionalities
+
+O Add carousel of portfolio
+    V create skeleton cards
+    V create carousel layout
+    V create button to shift cards
+    ? create seamless loop back to start
+
+- Add comment functionalities
+    V create comment body
+    V push new comment into post's comment array
+- Figure out how to dashboard only for admin (me)
+
+O Format Blog
+    V 3 cards per row
+    V image, then title, then line, then desc
+    V faded slate background, scale on hover?
+
+O Format dashboard
+- Format Home
+- Format Contact
+
+optional:
+- Validate and sanitise post inputs
+    - image links must be valid
+    - fields must not be empty
