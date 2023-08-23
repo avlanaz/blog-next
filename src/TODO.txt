@@ -24,3 +24,73 @@ optional:
 - Validate and sanitise post inputs
     - image links must be valid
     - fields must not be empty
+
+Rigbank
+
+Mangedah
+
+Tenbar
+
+Exelby
+
+T'bern
+
+Morelby
+
+Candem
+
+Docyron
+
+Eliang
+
+Feeldin
+
+Wehercing
+
+Kanechy
+
+Mt. Himersham
+
+Halfum
+
+Rehingay
+
+Worrah
+
+Grevinah
+
+Noding Hill
+
+Losh Uwon
+
+Nong Silit
+
+St. Genonnik
+
+Aeslech
+
+Ngotsink
+
+The Lamb
+
+Welshami
+
+Ortnem
+
+Mawhen
+
+Redderbig
+
+Dormnich
+
+Thawskour
+
+Notsut
+
+The Lowermast
+
+Mt. Walah
+
+Swordthawn
+
+Witsmen Rest
