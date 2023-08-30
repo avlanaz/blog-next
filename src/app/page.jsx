@@ -23,5 +23,7 @@ export default function Home() {
         <Image src={Hero} alt="hero" className="w-full h-96 object-cover rounded-md" />
       </div>
     </div>
+
+    
   )
 }

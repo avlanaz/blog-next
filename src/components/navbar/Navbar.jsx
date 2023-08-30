@@ -38,8 +38,6 @@ const links = [
 const Navbar = () => {
   const session = useSession();
 
-  // Maybe add dashboard only if user = AvlanAz
-
   return (
     <div className="h-24 flex justify-between items-center">
       <Link href="/" className=" font-bold text-3xl">
@@ -58,6 +56,31 @@ const Navbar = () => {
           >
             Logout
           </button>}
+          {
+            session.status === "unauthenticated" &&
+            <Link 
+              className=" px-4 py-1 bg-sky-500 rounded-md"
+              href="/dashboard/login">
+              Login
+            </Link>
+          }
+          {
+            // display register button if unauthenticated
+            session.status === "unauthenticated" &&
+            <Link
+              className=" px-4 py-1 bg-sky-500 rounded-md"
+              href="/dashboard/register">
+              Register
+            </Link>
+          }
+          {
+            //display an image with blurred borders if the user is logged in
+            session.status === "authenticated" &&
+            <div className="relative w-12 h-12 rounded-full">
+              <Image src={session.data.user.image} alt="" fill className="rounded-full object-cover"/>
+            </div>
+          }
+          
       </div>
     </div>
   )

@@ -27,14 +27,17 @@ const Login = () => {
     signIn("credentials", {email, password})
   }
 
+  const inputStyle = "p-6 bg-transparent border-2 border-solid border-slate-400 rounded-md font-bold text-slate-400"
+  const buttonStyle = "w-80 p-4 cursor-pointer bg-sky-500 border-none rounded-md font-bold"
+
   return (
-    <div className={styles.container}>
-      <form className={styles.form} onSubmit={handleSubmit}>
-        <input type='text' placeholder='email' className={styles.input} required/>
-        <input type='password' placeholder='password' className={styles.input} required/>
-        <button className={styles.button}>Login</button>
+    <div className="flex flex-col items-center justify-center gap-6">
+      <form className="w-80 flex flex-col gap-6" onSubmit={handleSubmit}>
+        <input type='text' placeholder='email' className={inputStyle} required/>
+        <input type='password' placeholder='password' className={inputStyle} required/>
+        <button className={buttonStyle}>Login</button>
       </form>
-      <button onClick={() => signIn("google")}>Login with Google</button>
+      <button className={buttonStyle} onClick={() => signIn("google")}>Login with Google</button>
     </div>
   )
 }
