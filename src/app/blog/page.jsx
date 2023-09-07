@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-	const res = await fetch(process.env.URL + "api/posts", {
+	const res = await fetch(process.env.API_URL + "posts", {
 		cache: "no-store",
 	});
 
