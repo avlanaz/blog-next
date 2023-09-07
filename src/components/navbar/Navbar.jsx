@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
+import Placeholder from "public/user_placeholder.png"
 import styles from "./navbar.module.css"
 import { signOut, useSession } from 'next-auth/react'
 
@@ -77,7 +79,7 @@ const Navbar = () => {
             //display an image with blurred borders if the user is logged in
             session.status === "authenticated" &&
             <div className="relative w-12 h-12 rounded-full">
-              <Image src={session.data.user.image} alt="" fill className="rounded-full object-cover"/>
+              <Image src={session.data.user.image || Placeholder} alt="" fill className="rounded-full object-cover"/>
             </div>
           }
           
